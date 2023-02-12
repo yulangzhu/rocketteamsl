@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rocket Team SL</title>
+        <link rel="icon" type="image/png" href="rocket_logo.png"/>
+        <style>
+            /* Estil de la pàgina */
+            body {
+                text-align: center;
+                font-family: Arial, sans-serif;
+                background-color: black;
+            }
+
+            /* Estil del logo */
+            .logo {
+                margin-top: 20px;
+                max-width: 300px;
+                width: 100%;
+                margin: 0 auto;
+                display: block;
+            }
+
+            /* Estil del formulari de login */
+            .form-container {
+                margin-top: 20px;
+                display: inline-block;
+                text-align: left;
+                padding: 30px;
+                background-color: #f2f2f2;
+                border-radius: 10px;
+            }
+
+            /* Estil de les entrades de formulari */
+            input[type="text"], input[type="password"] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+            }
+
+            /* Estil del botó submit */
+            input[type="submit"] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            /* Estil del botó quan s'ho està clicant */
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+
+            h1 {
+               color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Logo -->
+        <img src="rocket_logo.png" alt="Rocket Team SL Logo" class="logo"/>
+        <h1> INTRANET </h1>
+        <!-- Formulari de login -->
+        <div class="form-container">
+            <form action="validate_login.php" method="post">
+                <label for="username">Nom d'usuari:</label>
+                <input type="text" id="username" name="username">
+
+                <label for="password">Contrasenya:</label>
+                <input type="password" id="password" name="password">
+
+                <input type="submit" value="Iniciar sessió">
+            </form>
+        </div>
+    </body>
+</html>
